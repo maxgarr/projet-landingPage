@@ -1,0 +1,97 @@
+/***** General *****/
+body {
+    background-color: rgba(0,118,120,255);
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 50px auto;
+}
+
+@media screen and (min-width: 1566px) {
+    .card {
+            height: 200px !important;
+            width: 250px !important;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #head {
+        min-height: 620px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #head {
+        min-height: 500px;
+    }
+
+    .card {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #head {
+        min-height: 350px;
+    }
+
+    .card {
+        height: 80px;
+        width: 130px;
+        margin-bottom: 20px;
+    }
+
+    #nav {
+        margin-top: 20px;
+    }
+
+    a {
+        font-size: 1em !important;
+        margin-bottom: 10px
+    }
+
+    .pnav {
+        display: none;
+    }
+}
+
+
+/***** Section Head *****/
+#head {
+    background-image: url('/img/image1_test.jpeg');
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image: linear-gradient(to bottom, black 0 75%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, black 0 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+/***** Logo + Name *****/
+#logo {
+    padding: 25px;
+    color: white;
+}
+
+
+/***** Section Nav *****/
+#nav {
+    margin-top: -100px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+a:hover {
+    color: rgba(0,118,120,255);
+}
