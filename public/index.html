@@ -24,19 +24,19 @@
             <div class="container">
                 <div class="row justify-content-evenly text-center p-5">
                     <div class="card col-6 col-sm-6 col-md-3">
-                        <a href="#accueil">Accueil</a>
+                        <a class="a_nav" href="#accueil">Accueil</a>
                         <p class="pnav">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="card col-6 col-sm-6 col-md-3">
-                        <a href="#">Activités</a>
+                        <a class="a_nav" href="#">Activités</a>
                         <p class="pnav">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="card col-6 col-sm-6 col-md-3">
-                        <a href="#">Tarifs</a>
+                        <a class="a_nav" href="#">Tarifs</a>
                         <p class="pnav">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="card col-6 col-sm-6 col-md-3">
-                        <a href="/public/form/index.html">Contact</a>
+                        <a class="a_nav" href="/public/form/index.html">Contact</a>
                         <p class="pnav">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
@@ -53,14 +53,14 @@
             Sit, possimus ad? Magnam, impedit nesciunt quisquam necessitatibus perferendis cupiditate consequatur autem tempore ipsa rem iste excepturi unde, at est soluta dignissimos sequi ut ipsum, inventore aperiam voluptatum magni placeat!
             Quae totam sunt esse iste voluptatem fugiat ducimus aliquam itaque recusandae. Veritatis, porro expedita? Odit totam natus non quaerat sit! Quia consequuntur aperiam repudiandae et sapiente amet maiores id pariatur.
             Perferendis illum tempora dolorem repudiandae veritatis alias non saepe dolor dolorum fuga? Eveniet natus aut deleniti! Eos deleniti nam a repellat! Inventore culpa earum eveniet natus. Fugiat aspernatur facere inventore?</p>
-            <div class="row justify-content-evenly">
+            <div class="row justify-content-evenly text-center">
                 <div class="card imgCard col-6 col-sm-6">
-                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">les photos</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a class="a_photo mb-5" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Album photo 1</a>
+                    <p>Quelques photos du Chalet</p>
                 </div>
                 <div class="card imgCard col-6 col-sm-6">
-                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">les photos</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a class="a_photo mb-5" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Album photo 2</a>
+                    <p>Quelques photos du paysage</p>
                 </div>
             </div>
         </section>
@@ -72,7 +72,22 @@
             </div>
         </footer>
 
-        <!-- Modal photos test 1 -->
+        <!-- Modal photo test  -->
+        <div class="modal fead" style="max-width: 100% !important;" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 100% !important;">
+              <div class="modal-content" style="max-width: 100% !important;">
+                <div class="modal-header d-block text-center">
+                  <h5 class="modal-title" id="exampleModalLabel">Photo test</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+                </div>
+                <div class="modal-body text-center">                                     
+                   <img src="/img/image1_test.jpeg" alt="" width="60%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal album 1 -->
           <div class="modal fead" style="max-width: 100% !important;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" style="max-width: 100% !important;">
               <div class="modal-content" style="max-width: 100% !important;">
@@ -83,40 +98,40 @@
                 <div class="modal-body" style="max-width: 100% !important;">
                     <div class="row justify-content-evenly">
                         <div class="img_modal col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                     </div>                  
                    
@@ -126,7 +141,7 @@
           </div>
 
 
-        <!-- Modal test 2 -->
+        <!-- Modal album 2 -->
         <div class="modal fead" style="max-width: 100% !important;" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" style="max-width: 100% !important;">
               <div class="modal-content" style="max-width: 100% !important;">
@@ -137,40 +152,40 @@
                 <div class="modal-body" style="max-width: 100% !important;">
                     <div class="row justify-content-evenly">
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                         <div class="col-2 col-sm-2 my-3">
-                            <img src="/img/image1_test.jpeg" alt="" width="100%">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="album" src="/img/image1_test.jpeg" alt="" width="100%"></a>
                         </div>
                     </div>                  
                    

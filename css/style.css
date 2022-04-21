@@ -94,17 +94,13 @@ a {
 
 }
 
-a:hover {
+.a_nav:hover {
     color: rgba(0,118,120,255);
 }
 
 
 /***** Section accueil *****/
-.imgCard:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-img {
+.imgCard {
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -112,7 +108,44 @@ img {
     transition: all 1s ease;
 }
 
-img:hover {
+.imgCard:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+.a_nav {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.a_photo:hover {
+    color: rgba(0,118,120,255);
+}
+
+.a_photo {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.album {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.album:hover {
     -webkit-transform:scale(1.1);
     -moz-transform:scale(1.1);
     -ms-transform:scale(1.1);
