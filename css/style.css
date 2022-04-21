@@ -90,7 +90,7 @@ body {
 
 #question1 {
     position: absolute; 
-    opacity: 0.05; 
+    opacity: 0.1; 
     text-transform: uppercase;
     left: 0; 
     right: 0; 
