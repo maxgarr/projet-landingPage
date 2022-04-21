@@ -1,7 +1,7 @@
 /***** General *****/
 body {
     background-color: rgba(0,118,120,255);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,6 +17,16 @@ body {
 @media screen and (min-width: 1280px) {
     #head {
         min-height: 620px;
+    }
+
+    #presentation {
+        font-size: 30px; 
+        font-weight: 300; 
+    }
+
+    #question1 {
+        font-size: 100px; 
+        font-weight: 700; 
     }
 }
 
@@ -61,6 +71,30 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     height: 200px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.bandeau h2 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#presentation {
+    position: absolute;
+    text-transform: uppercase; 
+    left: 0; 
+    right: 0; 
+    top: 75px;
+}
+
+#question1 {
+    position: absolute; 
+    opacity: 0.05; 
+    text-transform: uppercase;
+    left: 0; 
+    right: 0; 
+    top: 35px;
 }
 
 
