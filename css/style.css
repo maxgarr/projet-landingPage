@@ -98,6 +98,13 @@ a:hover {
     color: rgba(0,118,120,255);
 }
 
+
+/***** Section accueil *****/
+.imgCard:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
 /***** footer *****/
 
 footer{
