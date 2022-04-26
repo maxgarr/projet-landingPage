@@ -1,20 +1,189 @@
 /***** General *****/
+:root {
+    --navbar-background-color: #f2f2f2;
+    --navbar-item-hovered-color: white;
+    --navbar-separator-color: #ececec;
+    --navbar-icon-color: #646c79;
+    --navbar-text-color: black;
+    --navbar-transition-speed: .2s;
+    --primary-color: rgba(0,118,120, 0.7);
+}
+
 body {
-    background-color: rgba(0,118,120,255);
+    background-color: rgba(0,118,120, 0.7);
     font-family:'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 1566px) {
+
+/***** Navbar left *****/
+
+#nav_left {
+    display: none;
+}
+
+.navbar {
+    width: 5rem;
+    max-height: 70%;
+    position: fixed;
+    top: 80px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    left: 0px;
+    bottom: 0px;
+    background: var(--navbar-background-color);
+    box-shadow: rgba(12, 43, 30, 0.2) 0 4px 14px;
+    transition: width var(--navbar-transition-speed) ease;
+}
+
+#navBottom {
+    border-radius: 0% !important;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-item {
+    width: 100%;
+    border-bottom: solid 1px var(--navbar-separator-color);
+    transition: background-color var(--navbar-transition-speed);
+}
+
+.navbar-item:hover {
+    background-color: var(--navbar-item-hovered-color);
+}
+
+
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5rem;
+    width: 100%;
+    text-decoration: none;
+}
+
+.navbar-icon {
+    text-align: center;
+    font-size: 1.5rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    color: var(--navbar-icon-color);
+    transition: var(--navbar-transition-speed);
+}
+
+.navbar-item:hover .navbar-icon {
+    color: var(--primary-color);
+}
+
+.navbar-title {
+    color: var(--navbar-text-color);
+}
+
+.navbar-item:hover .navbar-title {
+    color: var(--primary-color);
+}
+
+.navbar:not(:hover) .navbar-title {
+    display: none;
+}
+
+.logo {
+    background: var(--navbar-logo-background-color);
+}
+
+.logo .navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.navbar:hover .logo .navbar-icon {
+    transform: rotate(180deg);
+}
+
+#nav_bottom {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #nav {
+        display: none;
+    }
+
+    #nav_left {
+        display: none;
+    }
+
+    #nav_bottom {
+        display: block;
+    }
+
+    .navbar {
+        top: auto;
+        width: 100%;
+        bottom: 0;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .navbar:hover {
+        width: 100%;
+    }
+
+    .navbar-menu {
+        flex-direction: row;
+    }
+
+    .navbar-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar:hover .navbar-title {
+        display: none;
+    }
+
+    .navbar-icon {
+        width: 100px;
+        min-width: auto;
+        margin: 0;
+    }
+
+    .navbar-link {
+        justify-content: center;
+    }
+}
+
+/***** fin navbar left *****/
+
+@media only screen and (min-width: 1566px) {
     .card {
             height: 200px !important;
             width: 250px !important;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
     #head {
         min-height: 620px;
     }
@@ -30,7 +199,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     #head {
         min-height: 500px;
     }
@@ -41,7 +210,7 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     #head {
         min-height: 350px;
     }
@@ -59,10 +228,6 @@ body {
     a {
         font-size: 1em !important;
         margin-bottom: 10px
-    }
-
-    .pnav {
-        display: none;
     }
 }
 
@@ -126,7 +291,7 @@ body {
 }
 
 .c_nav {
-    max-height: 100px;
+    max-height: 80px;
 }
 
 .c_nav:hover {
