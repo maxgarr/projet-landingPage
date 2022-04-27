@@ -302,15 +302,12 @@ body {
     top: 5px;
 }
 
-a {
+.a_nav {
     margin-top: 10px;
     margin-bottom: 10px;
     text-decoration: none;
-    text-transform: uppercase;
     color: black;
-    font-size: 1.5em;
-    font-weight: bold;
-
+    font-size: 1.3em;
 }
 
 .a_nav:hover {
@@ -378,10 +375,39 @@ a {
 /***** Section Activité *****/
 
 
-/***** Section Tarifs *****/
+/***** Section a propos *****/
 
 
 /***** Section Contact *****/
+
+.infosContact {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.a_contact {
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;    
+}
+
+.a_contact:hover {
+    color: rgba(0,118,120,255);  
+}
+
+#contact_h2 {
+    font-size: 2.5rem;
+    padding: 2%;
+    margin-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    text-align: center;
+}
 
 
 /***** footer *****/
@@ -396,3 +422,4 @@ footer p{
     display: flex;
     justify-content: center;
 }
+
