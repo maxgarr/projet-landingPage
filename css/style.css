@@ -6,11 +6,11 @@
     --navbar-icon-color: #646c79;
     --navbar-text-color: black;
     --navbar-transition-speed: .2s;
-    --primary-color: rgba(0,118,120, 0.7);
+    --primary-color: rgba(0, 87, 88, 0.7);
 }
 
 body {
-    background-color: rgba(0,118,120, 0.7);
+    background-color: rgba(0, 87, 88, 0.8);
     font-family:'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -40,6 +40,7 @@ body {
 
 #navBottom {
     border-radius: 0% !important;
+    z-index: 2;
 }
 
 .navbar:hover {
@@ -268,7 +269,6 @@ body {
 
 /***** Section Head *****/
 #head {
-    margin-top: 100px;
     background-image: url('../img/image1_test.jpeg');
     background-size: cover;
     background-position: center;
@@ -291,6 +291,7 @@ body {
 
 .card {
     background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
 }
 
 .c_nav {
@@ -317,6 +318,20 @@ body {
 
 /***** Section accueil *****/
 
+.accueil {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-top: 20px;
+    padding-bottom: 80px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
+}
+
+.img_accueil {
+    position: relative;
+    width: 60%;
+    top: -10rem;
+    z-index: 1;
+}
+
 .container .image-container{
     display: flex;
     flex-wrap: wrap;
@@ -331,6 +346,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     overflow: hidden;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
 }
 .container .image-container .image img{
     height: 100%;
@@ -382,7 +398,7 @@ body {
 
 .infosContact {
     background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
     padding: 2%;
     width: 100%;
     display: flex;
@@ -400,12 +416,11 @@ body {
     color: rgba(0,118,120,255);  
 }
 
-#contact_h2 {
+.infosContact h2 {
     font-size: 2.5rem;
     padding: 2%;
     margin-bottom: 5%;
     background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
     text-align: center;
 }
 
@@ -414,7 +429,7 @@ body {
 
 footer{
     height: 50px;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(26, 26, 26);
 }
 footer p{
