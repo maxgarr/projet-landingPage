@@ -81,6 +81,7 @@
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
+    border-radius: 10px;
   }
   
   #btn #circle {
@@ -111,8 +112,8 @@
   
   #btn:hover #circle {
     height: 75px;
-    width: 200px;
-    left: 0;
+    width: 190px;
+    left: 5px;
     border-radius: 0;
     border-bottom: 2px solid #eee;
   }
