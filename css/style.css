@@ -6,7 +6,7 @@
     --navbar-icon-color: #646c79;
     --navbar-text-color: black;
     --navbar-transition-speed: .2s;
-    --primary-color: rgba(0, 87, 88, 0.7);
+    --primary-color: rgba(0, 87, 88, 0.8);
 }
 
 body {
@@ -403,13 +403,21 @@ body {
 /***** footer *****/
 
 footer{
-    height: 50px;
     width: 100%;
-    background-color: rgb(26, 26, 26);
+    background-color: rgba(26, 26, 26, 0.8);
 }
 footer p{
     color: white;
     display: flex;
     justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: rgba(0, 87, 88, 0.8);
 }
 
