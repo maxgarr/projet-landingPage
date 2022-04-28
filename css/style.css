@@ -26,7 +26,7 @@ body {
 
 .navbar {
     width: 5rem;
-    max-height: 70%;
+    max-height: 55%;
     position: fixed;
     top: 80px;
     border-bottom-right-radius: 10px;
@@ -269,11 +269,12 @@ body {
 
 /***** Section Head *****/
 #head {
+    height: 650px;
     background-image: url('../img/image1_test.jpeg');
     background-size: cover;
     background-position: center;
-    -webkit-mask-image: linear-gradient(to bottom, black 0 75%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, black 0 75%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0 80%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, black 0 80%, rgba(0, 0, 0, 0) 100%);
 }
 
 
@@ -283,38 +284,11 @@ body {
     color: white;
 }
 
-
 /***** Section Nav *****/
 #nav {
-    margin-top: -80px;
-}
+    margin-top: 0px;
 
-.card {
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
 }
-
-.c_nav {
-    max-height: 80px;
-}
-
-.c_nav:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    top: 5px;
-}
-
-.a_nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 1.3em;
-}
-
-.a_nav:hover {
-    color: rgba(0,118,120,255);
-}
-
 
 /***** Section accueil *****/
 
