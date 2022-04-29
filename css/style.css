@@ -364,6 +364,44 @@ body {
 
 /***** Section Activité *****/
 
+.activites {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(12, 43, 30, 0.2) 0 4px 14px;
+}
+
+.activites h1 {
+    text-align: center;
+}
+
+.infos_activites1, .infos_activites3 {
+    padding-right: 100px;
+}
+
+.infos_activites2 {
+    padding-left: 100px;
+}
+
+.p1, .p3 {
+    text-align: right;
+}
+
+.p2 {
+    text-align: left;
+}
+
+.img_activites1, .img_activites3 {
+    position: relative;
+    left: -100px;
+}
+
+.img_activites2 {
+    position: relative;
+    right: -100px;
+}
 
 /***** Section a propos *****/
 
