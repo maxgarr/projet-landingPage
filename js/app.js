@@ -23,6 +23,25 @@ btnFermer.addEventListener("click", () =>{
     document.querySelector('.popup-image').style.display = 'none';
 })
 
+// ************* Animation Bandeau *********************** //
+
+const slidingBandeau = document.querySelectorAll('.bandeau');
+
+slidingBandeau.forEach((bandeau) =>{
+
+    window.addEventListener('scroll', () => {
+        const{scrollTop, clientHeight} = document.documentElement;
+    
+        const topElementToTopViewport = bandeau.getBoundingClientRect().top;
+    
+        // methode "toFixed" permet d'enlever les chiffres apres la virgule
+        if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.50) {
+            bandeau.classList.add('active')
+        }
+    
+    })
+})
+
 
 
 
