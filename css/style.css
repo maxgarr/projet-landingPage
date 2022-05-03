@@ -136,7 +136,7 @@ body {
 
 .bandeau.active {
     transform: translateX(0%);
-    transition: 8s;
+    transition: 15s;
     opacity: 1;
 }
 
