@@ -292,6 +292,31 @@ body {
 
 /***** Section a propos *****/
 
+.card_ap {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-bottom: 6px solid rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.card_ap:hover {
+    border-bottom: 6px solid rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.btn_ap {
+    background-color: #ffffff;
+    color: rgba(0, 87, 88, 0.8);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.btn_ap:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform:scale(1.05);
+}
+
 
 /***** Section Contact *****/
 
