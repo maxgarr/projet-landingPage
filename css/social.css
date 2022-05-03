@@ -65,8 +65,8 @@
 
 
 #btn {
+    padding: 15px 42px;
     background: rgb(255, 255, 255);
-    height: 75px;
     min-width: 150px;
     max-width : 200px;
     border: none;
@@ -81,7 +81,7 @@
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 30px;
   }
   
   #btn #circle {
