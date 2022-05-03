@@ -309,7 +309,7 @@ body {
 
 .card_ap:hover {
     border-bottom: 6px solid rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .btn_ap {
@@ -322,7 +322,7 @@ body {
 .btn_ap:hover {
     background-color: transparent;
     color: #ffffff;
-    transform:scale(1.05);
+    transform:scale(1.01);
 }
 
 
