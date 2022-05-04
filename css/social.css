@@ -49,22 +49,16 @@
 .wrapper .facebook:hover {
   background: #1877F2;
   color: #ffffff;
-  -webkit-animation: rotate-vert-center .8s ease-in-out both;
-  animation: rotate-vert-center .8s ease-in-out both;
 }
 
 .wrapper .twitter:hover {
   background: #1DA1F2;
   color: #ffffff;
-  -webkit-animation: rotate-vert-center .8s ease-in-out both;
-  animation: rotate-vert-center .8s ease-in-out both;
 }
 
 .wrapper .instagram:hover {
   background: #E4405F;
   color: #ffffff;
-  -webkit-animation: rotate-vert-center .8s ease-in-out both;
-  animation: rotate-vert-center .8s ease-in-out both;
 }
 
 
@@ -139,6 +133,11 @@
   .icon3 {
     -webkit-animation: rotate-vert-center .8s .8s ease-in-out both;
     animation: rotate-vert-center .8s .8s ease-in-out both;
+  }
+
+  .test:hover {
+    -webkit-animation: rotate-vert-center .8s ease-in-out both;
+    animation: rotate-vert-center .8s ease-in-out both;
   }
 
   @-webkit-keyframes rotate-vert-center {
