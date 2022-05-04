@@ -174,6 +174,48 @@ body {
 
 
 /***** Logo + Name *****/
+.logo {
+
+    -webkit-animation: slide-right .5s .2s ease-in-out both;
+    animation: slide-right .5s .2s ease-in-out both;
+}
+
+#head h1 {
+
+    -webkit-animation: slide-left .5s .1s ease-in-out both;
+    animation: slide-right .5s .1s ease-in-out both;
+}
+
+#head h2 {
+
+    -webkit-animation: slide-right .5s ease-in-out both;
+    animation: slide-right .5s ease-in-out both;
+}
+
+
+
+ @-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-500px);
+        transform: translateX(-500px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-500px);
+        transform: translateX(-500px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+  }
+  
+
 #logo {
     padding: 25px;
     color: white;
