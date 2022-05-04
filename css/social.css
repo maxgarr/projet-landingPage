@@ -49,16 +49,22 @@
 .wrapper .facebook:hover {
   background: #1877F2;
   color: #ffffff;
+  -webkit-animation: rotate-vert-center .8s ease-in-out both;
+  animation: rotate-vert-center .8s ease-in-out both;
 }
 
 .wrapper .twitter:hover {
   background: #1DA1F2;
   color: #ffffff;
+  -webkit-animation: rotate-vert-center .8s ease-in-out both;
+  animation: rotate-vert-center .8s ease-in-out both;
 }
 
 .wrapper .instagram:hover {
   background: #E4405F;
   color: #ffffff;
+  -webkit-animation: rotate-vert-center .8s ease-in-out both;
+  animation: rotate-vert-center .8s ease-in-out both;
 }
 
 
@@ -117,3 +123,44 @@
     border-radius: 0;
     border-bottom: 2px solid #eee;
   }
+
+  /* START anim socials rotate */
+
+  .icon1 {
+    -webkit-animation: rotate-vert-center .8s .4s ease-in-out both;
+    animation: rotate-vert-center .8s .4s ease-in-out both;
+  }
+
+  .icon2 {
+    -webkit-animation: rotate-vert-center .8s .6s ease-in-out both;
+    animation: rotate-vert-center .8s .6s ease-in-out both;
+  }
+
+  .icon3 {
+    -webkit-animation: rotate-vert-center .8s .8s ease-in-out both;
+    animation: rotate-vert-center .8s .8s ease-in-out both;
+  }
+
+  @-webkit-keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+
+  /* END anim socials rotate */
+  
