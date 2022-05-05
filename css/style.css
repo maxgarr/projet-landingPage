@@ -254,7 +254,7 @@ body {
 .container .image-container .image{
     height: 250px;
     width: 350px;
-    border: 10px solid #fff;
+    border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     overflow: hidden;
     cursor: pointer;
