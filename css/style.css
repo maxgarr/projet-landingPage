@@ -454,6 +454,7 @@ footer a:hover {
 
 /****************** RESPONSIVE *********************/
 
+/********** MOBILE **********/
 @media screen and (min-device-width: 480px) and (max-device-width: 720px) { 
     #head {
         min-height: 350px;
@@ -475,6 +476,7 @@ footer a:hover {
     } 
 }
 
+/********** TABLETTE PORTRAIT **********/
 @media screen and (min-device-width: 721px) and (max-device-width: 900px) { 
     #head {
         min-height: 500px;
@@ -486,6 +488,7 @@ footer a:hover {
     }
 }
 
+/********** TABLETTE PAYSAGE **********/
 @media screen and (min-device-width: 901px) and (max-device-width: 1024px) { 
     #nav {
         display: none;
@@ -543,6 +546,7 @@ footer a:hover {
     }
 }
 
+/********** PC **********/
 @media screen and (min-device-width: 1024px) { 
     #head {
         min-height: 620px;
@@ -557,7 +561,7 @@ footer a:hover {
         font-size: 100px; 
         font-weight: 700; 
     }
-    
+
     .card {
             height: 200px !important;
             width: 250px !important;
