@@ -306,43 +306,37 @@ body {
     max-width: 80%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 30px 30px;
+    padding: 10px 30px;
     border-radius: 10px;
     box-shadow: rgba(12, 43, 30, 0.2) 0 4px 14px;
+}
+
+.activites .container {
+    margin-bottom: 0 !important;
 }
 
 .activites h1 {
     text-align: center;
 }
 
-.infos_activites1, .infos_activites3 {
-    padding-right: 100px;
+.infos_activites1, .infos_activites3, .infos_activites2 {
+    position: static;
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 20px;
 }
 
-.infos_activites2 {
-    padding-left: 100px;
+.p1, .p2, .p3 {
+    text-align: center;
+    padding-bottom: 50px;
 }
 
-.p1, .p3 {
-    text-align: right;
-}
-
-.p2 {
-    text-align: left;
-}
-
-.img_activites1, .img_activites3 {
+.img_activites1, .img_activites2, .img_activites3 {
     position: relative;
-    left: -100px;
-}
-
-.img_activites2 {
-    position: relative;
-    right: -100px;
-}
-
+    width: 100%;
+    top: -100px !important;
+} 
 /***** Section a propos *****/
-
 .card_ap {
     box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -366,6 +360,12 @@ body {
     background-color: transparent;
     color: #ffffff;
     transform:scale(1.01);
+}
+
+.btn-apropos {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
 }
 
 
@@ -490,25 +490,16 @@ footer a:hover {
     .bandeau {
         height: 150px !important;
     }
-    
-    .infos_activites1, .infos_activites3, .infos_activites2 {
-        position: static;
-        width: 100%;
-        padding: 15px 30px;
-        margin-bottom: 20px;
-    }
-
-    .p1, .p2, .p3 {
-        text-align: center;
-    }
-
-    .img_activites1, .img_activites2, .img_activites3 {
-        position: static;
-        width: 100%;
-    }
+}
 
 /********** PC **********/
 @media screen and (min-width: 1025px) { 
+    .card_ap {
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
     #head {
         min-height: 620px;
     }
@@ -531,8 +522,30 @@ footer a:hover {
     }
 }
 
-/********** RESPONSIVE NAVBAR **********/
+/********** RESPONSIVE HIGH **********/
 @media screen and (max-width: 1024px) {
+    .card_ap {
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .infos_activites1, .infos_activites3, .infos_activites2 {
+        position: static;
+        width: 100%;
+        padding: 15px 30px;
+        margin-bottom: 20px;
+    }
+
+    .p1, .p2, .p3 {
+        text-align: center;
+    }
+
+    .img_activites1, .img_activites2, .img_activites3 {
+        position: static;
+        width: 100%;
+    } 
+
     footer .container {
         margin-bottom: 30px;
     }
@@ -582,5 +595,11 @@ footer a:hover {
 
     .navbar-link {
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .row .card_ap {
+        margin: 10px 10px !important;
     }
 }
