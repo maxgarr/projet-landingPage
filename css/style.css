@@ -449,16 +449,44 @@ footer a {
 footer a:hover {
     color: rgba(0, 87, 88, 0.8);
 }
+/***** fin navbar left *****/
+
 
 /****************** RESPONSIVE *********************/
 
-@media only screen and (max-width: 1400px) {         
-    .container .popup-image img{
-        width: 95%;
+@media screen and (min-device-width: 480px) and (max-device-width: 720px) { 
+    #head {
+        min-height: 350px;
+    }
+
+    .card {
+        height: 80px;
+        width: 130px;
+        margin-bottom: 20px;
+    }
+
+    #nav {
+        margin-top: 20px;
+    }
+
+    a {
+        font-size: 1em !important;
+        margin-bottom: 10px
+    } 
+}
+
+@media screen and (min-device-width: 721px) and (max-device-width: 900px) { 
+    #head {
+        min-height: 500px;
+    }
+
+    .card {
+        height: 150px;
+        width: 200px;
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (min-device-width: 901px) and (max-device-width: 1024px) { 
     #nav {
         display: none;
     }
@@ -509,18 +537,13 @@ footer a:hover {
     .navbar-link {
         justify-content: center;
     }
-}
 
-/***** fin navbar left *****/
-
-@media only screen and (min-width: 1566px) {
-    .card {
-            height: 200px !important;
-            width: 250px !important;
+    .container .popup-image img{
+        width: 95%;
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-device-width: 1024px) { 
     #head {
         min-height: 620px;
     }
@@ -534,38 +557,9 @@ footer a:hover {
         font-size: 100px; 
         font-weight: 700; 
     }
-}
-
-@media only screen and (min-width: 768px) {
-    #head {
-        min-height: 500px;
-    }
-
+    
     .card {
-        height: 150px;
-        width: 200px;
-    }
-
-
-}
-
-@media only screen and (max-width: 767px) {
-    #head {
-        min-height: 350px;
-    }
-
-    .card {
-        height: 80px;
-        width: 130px;
-        margin-bottom: 20px;
-    }
-
-    #nav {
-        margin-top: 20px;
-    }
-
-    a {
-        font-size: 1em !important;
-        margin-bottom: 10px
+            height: 200px !important;
+            width: 250px !important;
     }
 }
