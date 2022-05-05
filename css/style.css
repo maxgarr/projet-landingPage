@@ -452,44 +452,77 @@ footer a:hover {
 /***** fin navbar left *****/
 
 
+
 /****************** RESPONSIVE *********************/
 
 /********** MOBILE **********/
-@media screen and (min-device-width: 480px) and (max-device-width: 720px) { 
-    #head {
-        min-height: 350px;
+@media screen and (min-width: 480px) and (max-width: 720px) { 
+    .navbar .navbar-menu {
+        width: 480px !important;
     }
 
-    .card {
-        height: 80px;
-        width: 130px;
-        margin-bottom: 20px;
+    .navbar .navbar-item {
+        width: 95px !important;
     }
 
-    #nav {
-        margin-top: 20px;
+    .bandeau {
+        height: 130px !important;
     }
 
-    a {
-        font-size: 1em !important;
-        margin-bottom: 10px
-    } 
+    .bandeau h2{
+        font-size: 1.3em !important;
+    }
 }
 
 /********** TABLETTE PORTRAIT **********/
-@media screen and (min-device-width: 721px) and (max-device-width: 900px) { 
-    #head {
-        min-height: 500px;
-    }
-
-    .card {
-        height: 150px;
-        width: 200px;
+@media screen and (min-width: 721px) and (max-width: 900px) {
+    .bandeau {
+        height: 140px !important;
     }
 }
 
 /********** TABLETTE PAYSAGE **********/
-@media screen and (min-device-width: 901px) and (max-device-width: 1024px) { 
+@media  screen and (orientation: landscape) and (min-width: 901px) and (max-width: 1024px) { 
+    .container .popup-image img{
+        width: 95%;
+    }
+
+    .bandeau {
+        height: 150px !important;
+    }
+}
+
+/********** PC **********/
+@media screen and (min-width: 1025px) { 
+    #head {
+        min-height: 620px;
+    }
+
+    #presentation {
+        font-size: 1em; 
+        font-weight: 300; 
+        top: 80px;
+    }
+
+    #question1 {
+        font-size: 4rem; 
+        font-weight: 700; 
+        top: 60px;
+    }
+
+    .card {
+        height: 200px !important;
+        width: 250px !important;
+    }
+}
+
+/********** RESPONSIVE NAVBAR **********/
+
+@media screen and (max-width: 1024px) {
+    footer .container{
+        margin-bottom: 30px;
+    }
+
     #nav {
         display: none;
     }
@@ -521,11 +554,7 @@ footer a:hover {
     .navbar-item {
         padding-left: 15px;
         padding-right: 15px;
-    }
-
-    .logo {
-        display: none;
-    }
+    }  
 
     .navbar:hover .navbar-title {
         display: none;
@@ -539,31 +568,5 @@ footer a:hover {
 
     .navbar-link {
         justify-content: center;
-    }
-
-    .container .popup-image img{
-        width: 95%;
-    }
-}
-
-/********** PC **********/
-@media screen and (min-device-width: 1024px) { 
-    #head {
-        min-height: 620px;
-    }
-
-    #presentation {
-        font-size: 30px; 
-        font-weight: 300; 
-    }
-
-    #question1 {
-        font-size: 100px; 
-        font-weight: 700; 
-    }
-
-    .card {
-            height: 200px !important;
-            width: 250px !important;
     }
 }
