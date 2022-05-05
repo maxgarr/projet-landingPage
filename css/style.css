@@ -294,7 +294,7 @@ body {
     transform: translate(-50%, -50%);
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 750px;
+    width: 1300px;
     object-fit: cover;
 }
 
@@ -452,6 +452,12 @@ footer a:hover {
 
 /****************** RESPONSIVE *********************/
 
+@media only screen and (max-width: 1400px) {         
+    .container .popup-image img{
+        width: 95%;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     #nav {
         display: none;
@@ -561,9 +567,5 @@ footer a:hover {
     a {
         font-size: 1em !important;
         margin-bottom: 10px
-    }
-    
-    .container .popup-image img{
-        width: 95%;
     }
 }
