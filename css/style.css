@@ -540,9 +540,7 @@ footer a:hover {
         width: 200px;
     }
 
-    .container .popup-image img{
-        width: 95%;
-    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -563,5 +561,9 @@ footer a:hover {
     a {
         font-size: 1em !important;
         margin-bottom: 10px
+    }
+    
+    .container .popup-image img{
+        width: 95%;
     }
 }
