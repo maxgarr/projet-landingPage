@@ -23,6 +23,7 @@ btnFermer.addEventListener("click", () =>{
     document.querySelector('.popup-image').style.display = 'none';
 })
 
+
 // ************* Animation Bandeau *********************** //
 
 const slidingBandeau = document.querySelectorAll('.bandeau');
@@ -41,8 +42,3 @@ slidingBandeau.forEach((bandeau) =>{
     
     })
 })
-
-
-
-
-
