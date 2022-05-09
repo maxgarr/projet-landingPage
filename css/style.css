@@ -203,7 +203,7 @@ body {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-  }
+}
   @keyframes slide-right {
     0% {
         -webkit-transform: translateX(-500px);
@@ -213,7 +213,7 @@ body {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-  }
+}
   
 
 #logo {
@@ -244,14 +244,14 @@ body {
     z-index: 1;
 }
 
-.container .image-container{
+.container .image-container {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     padding: 10px;
 }
-.container .image-container .image{
+.container .image-container .image {
     height: 250px;
     width: 350px;
     border: 5px solid rgba(255, 255, 255, 0.2);
@@ -260,13 +260,13 @@ body {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
 }
-.container .image-container .image img{
+.container .image-container .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
 }
-.container .image-container .image:hover img{
+.container .image-container .image:hover img {
     transform: scale(1.1);
 }
 
@@ -337,43 +337,37 @@ body {
     max-width: 80%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 30px 30px;
+    padding: 10px 30px;
     border-radius: 10px;
     box-shadow: rgba(12, 43, 30, 0.2) 0 4px 14px;
+}
+
+.activites .container {
+    margin-bottom: 0 !important;
 }
 
 .activites h1 {
     text-align: center;
 }
 
-.infos_activites1, .infos_activites3 {
-    padding-right: 100px;
+.infos_activites1, .infos_activites3, .infos_activites2 {
+    position: static;
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 20px;
 }
 
-.infos_activites2 {
-    padding-left: 100px;
+.p1, .p2, .p3 {
+    text-align: center;
+    padding-bottom: 50px;
 }
 
-.p1, .p3 {
-    text-align: right;
-}
-
-.p2 {
-    text-align: left;
-}
-
-.img_activites1, .img_activites3 {
+.img_activites1, .img_activites2, .img_activites3 {
     position: relative;
-    left: -100px;
-}
-
-.img_activites2 {
-    position: relative;
-    right: -100px;
-}
-
+    width: 100%;
+    top: -100px !important;
+} 
 /***** Section a propos *****/
-
 .card_ap {
     box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -10px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -397,6 +391,12 @@ body {
     background-color: transparent;
     color: #ffffff;
     transform:scale(1.01);
+}
+
+.btn-apropos {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
 }
 
 
@@ -457,7 +457,7 @@ body {
     40%, 100% {
       transform: rotateZ(0);
     }
-  }
+}
 
 
 /***** footer *****/
@@ -483,41 +483,104 @@ footer a:hover {
 /***** fin navbar left *****/
 
 
+
 /****************** RESPONSIVE *********************/
 
-@media screen and (min-device-width: 480px) and (max-device-width: 720px) { 
+/********** MOBILE **********/
+@media screen and (min-width: 480px) and (max-width: 720px) { 
+    .navbar .navbar-menu {
+        width: 480px !important;
+    }
+
+    .navbar .navbar-item {
+        width: 95px !important;
+    }
+
+    .bandeau {
+        height: 130px !important;
+    }
+
+    .bandeau h2{
+        font-size: 1.3em !important;
+    }
+}
+
+/********** TABLETTE PORTRAIT **********/
+@media screen and (min-width: 721px) and (max-width: 900px) {
+    .bandeau {
+        height: 140px !important;
+    }
+}
+
+/********** TABLETTE PAYSAGE **********/
+@media  screen and (orientation: landscape) and (min-width: 901px) and (max-width: 1024px) { 
+    .container .popup-image img{
+        width: 95%;
+    }
+
+    .bandeau {
+        height: 150px !important;
+    }
+}
+
+/********** PC **********/
+@media screen and (min-width: 1025px) { 
+    .card_ap {
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
     #head {
-        min-height: 350px;
+        min-height: 620px;
+    }
+
+    #presentation {
+        font-size: 1em; 
+        font-weight: 300; 
+        top: 80px;
+    }
+
+    #question1 {
+        font-size: 4rem; 
+        font-weight: 700; 
+        top: 60px;
     }
 
     .card {
-        height: 80px;
-        width: 130px;
+        height: 200px !important;
+        width: 250px !important;
+    }
+}
+
+/********** RESPONSIVE HIGH **********/
+@media screen and (max-width: 1024px) {
+    .card_ap {
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .infos_activites1, .infos_activites3, .infos_activites2 {
+        position: static;
+        width: 100%;
+        padding: 15px 30px;
         margin-bottom: 20px;
     }
 
-    #nav {
-        margin-top: 20px;
+    .p1, .p2, .p3 {
+        text-align: center;
     }
 
-    a {
-        font-size: 1em !important;
-        margin-bottom: 10px
+    .img_activites1, .img_activites2, .img_activites3 {
+        position: static;
+        width: 100%;
     } 
-}
 
-@media screen and (min-device-width: 721px) and (max-device-width: 900px) { 
-    #head {
-        min-height: 500px;
+    footer .container {
+        margin-bottom: 30px;
     }
 
-    .card {
-        height: 150px;
-        width: 200px;
-    }
-}
-
-@media screen and (min-device-width: 901px) and (max-device-width: 1024px) { 
     #nav {
         display: none;
     }
@@ -549,11 +612,7 @@ footer a:hover {
     .navbar-item {
         padding-left: 15px;
         padding-right: 15px;
-    }
-
-    .logo {
-        display: none;
-    }
+    }  
 
     .navbar:hover .navbar-title {
         display: none;
@@ -568,29 +627,10 @@ footer a:hover {
     .navbar-link {
         justify-content: center;
     }
-
-    .container .popup-image img{
-        width: 95%;
-    }
 }
 
-@media screen and (min-device-width: 1024px) { 
-    #head {
-        min-height: 620px;
-    }
-
-    #presentation {
-        font-size: 30px; 
-        font-weight: 300; 
-    }
-
-    #question1 {
-        font-size: 100px; 
-        font-weight: 700; 
-    }
-    
-    .card {
-            height: 200px !important;
-            width: 250px !important;
+@media screen and (min-width: 1400px) {
+    .row .card_ap {
+        margin: 10px 10px !important;
     }
 }
